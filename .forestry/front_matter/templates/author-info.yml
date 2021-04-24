@@ -2,13 +2,6 @@
 label: Author Info
 hide_body: false
 fields:
-- name: keytype
-  type: text
-  config:
-    required: true
-  label: keytype
-  default: author
-  hidden: true
 - name: name
   type: text
   config:
@@ -24,3 +17,10 @@ fields:
   config:
     maxSize: 10
   label: Image
+- name: keytype
+  type: text
+  config:
+    required: true
+  label: keytype
+  default: author
+  hidden: true
