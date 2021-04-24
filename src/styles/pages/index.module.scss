@@ -1,4 +1,7 @@
 .title {
+  margin: 3rem;
   text-align: center;
-  margin: 2rem;
+  span {
+    border-bottom: 6px dotted #D1D5DB;
+  }
 }

@@ -17,13 +17,13 @@ export default function BlogList() {
                 <Link to={`/blog/${blog.node.fields.slug}`} key={blog.node.id}>
                   <div className={blogListStyles.list__hero}>
                     <div className={blogListStyles.list__wrapper}>
-                    {<Img 
+                    <Img 
                       fluid={
                         blog.node.frontmatter.hero_image.childImageSharp.fluid
                       }
                       style={{ position: 'absolute' }}
                       alt={blog.node.frontmatter.title}
-                    />}
+                    />
                     </div>
                   </div>
                   <div className={blogListStyles.list__info}>
