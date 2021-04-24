@@ -2,7 +2,6 @@
 date: 2021-04-23T12:26:10Z
 hero_image: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
 title: Here is a good one :)
-author: Robert Thoreau
 
 ---
 

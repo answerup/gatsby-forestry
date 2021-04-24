@@ -1,5 +1,5 @@
 ---
-keytype: author
+keytype: about
 name: Amit Agarwal
 tagline: Web Geek, Google Developer Expert
 image: "../images/heather-shevlin-3B_NrzTjajc-unsplash.jpg"

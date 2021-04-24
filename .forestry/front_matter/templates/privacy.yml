@@ -1,5 +1,5 @@
 ---
-label: Author Info
+label: Privacy Page
 hide_body: false
 fields:
 - name: keytype
@@ -9,3 +9,5 @@ fields:
   label: keytype
   default: privacy
   hidden: true
+pages:
+- content/data/privacy.md

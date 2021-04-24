@@ -13,21 +13,17 @@ sections:
   match: "**/*"
   new_doc_ext: md
   templates:
-  - blog-post
-- type: document
-  path: content/data/authors.yaml
-  label: Author List
-- type: document
-  path: content/data/info.json
-  label: Info Page
+  - post
 - type: heading
-  label: General Config
+  label: Pages
 - type: document
-  path: content/data/author-info.md
-  label: Author info
+  path: content/data/about.md
+  label: About Page
 - type: document
   path: content/data/privacy.md
-  label: Privacy
+  label: Privacy Page
+- type: heading
+  label: Config
 - type: document
   path: config.json
   label: Site Info

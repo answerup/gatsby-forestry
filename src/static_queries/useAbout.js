@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 export default function useSiteMetadata() {
   const data = useStaticQuery(graphql`
     query {
-      markdownRemark(frontmatter: {keytype: {eq: "author"}}) {
+      markdownRemark(frontmatter: {keytype: {eq: "about"}}) {
         html
         frontmatter {
           name

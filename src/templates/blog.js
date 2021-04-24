@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
-import useBlogData from '../static_queries/useBlogData'
+import usePosts from '../static_queries/usePosts'
 import blogTemplateStyles from "../styles/templates/blog.module.scss"
 import bodyStyles from "../styles/body.module.scss"
 import Img from 'gatsby-image'
@@ -9,7 +9,7 @@ import About from "../components/About"
 
 export default function Blog(props) {
   const data = props.data.markdownRemark
-  const allBlogData = useBlogData()
+  const allBlogData = usePosts()
   const nextSlug = getNextSlug(data.fields.slug)
 
   function getNextSlug(slug) {

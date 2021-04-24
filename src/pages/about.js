@@ -3,10 +3,10 @@ import Img from 'gatsby-image'
 import Layout from "../components/Layout"
 import aboutStyles from "../styles/pages/about.module.scss"
 import bodyStyles from "../styles/body.module.scss"
-import useAuthorInfo from "../static_queries/useAuthorInfo"
+import useAbout from "../static_queries/useAbout"
 
 export default function About() {
-  const { html, frontmatter } = useAuthorInfo()
+  const { html, frontmatter } = useAbout()
   return (
     <Layout page="about">
       <section className={aboutStyles.about}>

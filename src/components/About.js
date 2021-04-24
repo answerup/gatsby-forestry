@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from 'gatsby-image'
-import useAuthorInfo from "../static_queries/useAuthorInfo"
+import useAbout from "../static_queries/useAbout"
 import aboutStyles from "../styles/components/about.module.scss"
 
 export default function BlogList() {
-  const { frontmatter } = useAuthorInfo()
+  const { frontmatter } = useAbout()
   return (
     <Link title={`“${frontmatter.name}”`} to="/about" className={aboutStyles.about}>
       <div className={aboutStyles.image}>

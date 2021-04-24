@@ -1,5 +1,5 @@
 ---
-label: Author Info
+label: About Page
 hide_body: false
 fields:
 - name: keytype
@@ -24,3 +24,5 @@ fields:
   config:
     maxSize: 10
   label: Image
+pages:
+- content/data/about.md
