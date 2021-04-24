@@ -23,6 +23,10 @@ sections:
 - type: heading
   label: General Config
 - type: document
+  path: content/data/author.md
+  label: Author info
+  match: "**/*"
+- type: document
   path: config.json
   label: Site Info
 upload_dir: content/images
