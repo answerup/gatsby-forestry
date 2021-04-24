@@ -23,7 +23,7 @@ sections:
 - type: heading
   label: General Config
 - type: document
-  path: content/data/author.md
+  path: content/data/author-info.md
   label: Author info
 - type: document
   path: config.json
