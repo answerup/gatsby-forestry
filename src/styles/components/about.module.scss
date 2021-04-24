@@ -9,14 +9,12 @@
   display: flex;
   align-items: center;
   border: none;
+  transition: opacity 0.3s ease;
   &:hover {
-    opacity: 1;
+    opacity: 0.9;
   }
   &:hover .info {
-    transform: translateX(10px);
-  }
-  &:hover .image {
-    opacity: 0.8;
+    transform: translateX(0.5rem);
   }
   &::before {
     content: "";
@@ -30,7 +28,6 @@
 }
 
 .image {
-  transition: opacity 0.3s ease;
   flex-shrink: 0;
   position: relative;
   height: 8rem;
@@ -43,9 +40,6 @@
   margin-left: 2rem;
   transition: transform 0.3s ease;
   h2 {
-    margin-bottom: 1rem;
-  }
-  h4 {
-    color: #9CA3AF;
+    margin-bottom: 0.5rem;
   }
 }

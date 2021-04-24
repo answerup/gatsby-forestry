@@ -8,7 +8,11 @@ export default function NotFound() {
         <Layout page="404">
             <div className={notFoundStyles.notFound__container}>
                 <h1>404 | Not found</h1>
-                <Link to="/">Back to home</Link>
+                <Link title="Back to home" to="/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                  </svg>
+                </Link>
             </div>
         </Layout>
     )

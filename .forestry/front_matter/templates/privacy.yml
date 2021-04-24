@@ -1,0 +1,11 @@
+---
+label: Author Info
+hide_body: false
+fields:
+- name: keytype
+  type: text
+  config:
+    required: true
+  label: keytype
+  default: privacy
+  hidden: true

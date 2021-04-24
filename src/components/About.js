@@ -7,7 +7,7 @@ import aboutStyles from "../styles/components/about.module.scss"
 export default function BlogList() {
   const { frontmatter } = useAuthorInfo()
   return (
-    <Link to="/about" className={aboutStyles.about}>
+    <Link title={`“${frontmatter.name}”`} to="/about" className={aboutStyles.about}>
       <div className={aboutStyles.image}>
         <Img 
           fluid={frontmatter.image.childImageSharp.fluid}
@@ -17,7 +17,7 @@ export default function BlogList() {
       </div>
       <div className={aboutStyles.info}>
         <h2>{frontmatter.name}</h2>
-        <h4>{frontmatter.tagline}</h4>
+        <h3>{frontmatter.tagline}</h3>
       </div>
     </Link>
   )

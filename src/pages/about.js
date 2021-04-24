@@ -22,7 +22,7 @@ export default function About() {
             </div>
           </div>
           <h1>{frontmatter.name}</h1>
-          <h4>{frontmatter.tagline}</h4>
+          <h3>{frontmatter.tagline}</h3>
         </div>
         <div
           className={bodyStyles.body}

@@ -1,15 +1,12 @@
 .list {
   max-width: 1024px;
-  overflow: hidden;
   margin: 0 auto;
   a {
     display: block;
     border: none;
+    transition: opacity 0.3s ease;
     &:hover {
-      opacity: 1;
-    }
-    &:hover .list__hero {
-      opacity: 0.8;
+      opacity: 0.9;
     }
   }
   h2 {
@@ -19,7 +16,9 @@
     margin-bottom: 1rem;
   }
   &__hero {
-    transition: opacity 0.3s ease;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-radius: 1rem;
+    overflow: hidden;
   }
   &__wrapper {
     position: relative;
@@ -37,7 +36,7 @@
       display: flex;
       align-items: center;
       &:hover .list__info {
-        transform: translateX(10px);
+        transform: translateX(0.5rem);
       }
     }
     &__hero {

@@ -42,7 +42,7 @@ export default function Blog(props) {
           dangerouslySetInnerHTML={{ __html: data.html }}
         />
         <div className={blogTemplateStyles.blog__footer}>
-          <Link to={`/blog/${nextSlug}`} className={blogTemplateStyles.footer__next}>
+          <Link title="Next post" to={`/blog/${nextSlug}`} className={blogTemplateStyles.footer__next}>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
@@ -54,8 +54,6 @@ export default function Blog(props) {
   )
 }
 
-//dynamic page query, must occur within each post context
-//$slug is made available by context from createPages call in gatsby-node.js
 export const getPostData = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
