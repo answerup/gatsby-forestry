@@ -23,6 +23,9 @@ sections:
 - type: heading
   label: General Config
 - type: document
+  path: content/data/author-info.md
+  label: Author info
+- type: document
   path: config.json
   label: Site Info
 upload_dir: content/images

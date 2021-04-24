@@ -1,0 +1,26 @@
+---
+label: Author Info
+hide_body: false
+fields:
+- name: keytype
+  type: text
+  config:
+    required: true
+  label: keytype
+  default: author
+  hidden: true
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+- name: tagline
+  type: text
+  config:
+    required: true
+  label: Tagline
+- name: image
+  type: file
+  config:
+    maxSize: 10
+  label: Image
