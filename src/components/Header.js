@@ -2,12 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 import headerStyles from "../styles/components/header.module.scss"
 
-export default function Header(props) {
+export default function Header({ title }) {
   return (
     <header className={headerStyles.header}>
       <h1>
         <Link to="/">
-          {props.title}
+          {title}
         </Link>
       </h1>
       <nav
@@ -18,13 +18,13 @@ export default function Header(props) {
         <div>
           <Link
             to="/about"
-            activeClassName={headerStyles.navItemActive}
+            activeClassName={headerStyles.active}
           >
           About
           </Link>
           <Link
             to="/privacy"
-            activeClassName={headerStyles.navItemActive}
+            activeClassName={headerStyles.active}
           >
           Privacy
           </Link>

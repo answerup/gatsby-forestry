@@ -1,3 +1,5 @@
+@import '../variables';
+
 .blog__hero {
   height: 30vh;
   margin-bottom: 0;
@@ -23,7 +25,7 @@
     text-transform: uppercase;
     padding: 1rem 3rem;
     &:hover {
-      background: #F3F4F6;
+      background: $gray2;
     }
   }
 }

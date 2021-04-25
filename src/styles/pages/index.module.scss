@@ -1,7 +1,9 @@
+@import '../variables';
+
 .title {
   margin: 3rem;
   text-align: center;
   span {
-    border-bottom: 6px dotted #D1D5DB;
+    border-bottom: 6px dotted $gray4;
   }
 }

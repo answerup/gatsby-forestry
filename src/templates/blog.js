@@ -7,10 +7,10 @@ import bodyStyles from "../styles/body.module.scss"
 import Img from 'gatsby-image'
 import About from "../components/About"
 
-export default function Blog(props) {
-  const data = props.data.markdownRemark
+export default function Blog({ data }) {
+  const { html, frontmatter, fields } = data.markdownRemark
   const allBlogData = usePosts()
-  const nextSlug = getNextSlug(data.fields.slug)
+  const nextSlug = getNextSlug(fields.slug)
 
   function getNextSlug(slug) {
     const allSlugs = allBlogData.map(blog => {
@@ -29,17 +29,17 @@ export default function Blog(props) {
       <article className={blogTemplateStyles.blog}>
         <figure className={blogTemplateStyles.blog__hero}>
           <Img
-            fluid={data.frontmatter.hero_image.childImageSharp.fluid}
-            alt={data.frontmatter.title}
+            fluid={frontmatter.hero_image.childImageSharp.fluid}
+            alt={frontmatter.title}
           />
         </figure>
         <div className={blogTemplateStyles.blog__info}>
-          <h1>{data.frontmatter.title}</h1>
-          <h3>{data.frontmatter.date}</h3>
+          <h1>{frontmatter.title}</h1>
+          <h3>{frontmatter.date}</h3>
         </div>
         <div
           className={bodyStyles.body}
-          dangerouslySetInnerHTML={{ __html: data.html }}
+          dangerouslySetInnerHTML={{ __html: html }}
         />
         <div className={blogTemplateStyles.blog__footer}>
           <Link title="Next post" to={`/blog/${nextSlug}`} className={blogTemplateStyles.footer__next}>

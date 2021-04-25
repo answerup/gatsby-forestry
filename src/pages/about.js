@@ -8,7 +8,7 @@ import useAbout from "../static_queries/useAbout"
 export default function About() {
   const { html, frontmatter } = useAbout()
   return (
-    <Layout page="about">
+    <Layout>
       <section className={aboutStyles.about}>
         <h1 className={aboutStyles.title}><span>About</span></h1>
         <div className={aboutStyles.info}>

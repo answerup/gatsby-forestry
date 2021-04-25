@@ -1,3 +1,5 @@
+@import './variables';
+
 .body {
   max-width: 768px;
   padding: 0 1.25rem;
@@ -11,33 +13,39 @@
     line-height: 1.2;
   }
   p {
-    color: #464646;
+    color: $gray8;
     font-weight: normal;
   }
   blockquote {
     margin-left: 0;
-    border-left: 4px solid #E5E7EB;
+    border-left: 4px solid $gray3;
     padding: 1.5rem 0;
     p {
-      margin-left: 1.75rem;
+      margin-left: 1.25rem;
       font-style: italic;
-      color: #6B7280;
+      color: $gray7;
     }
   }
   code {
-    color: #6B7280;
+    color: $gray7;
   }
   ul {
     list-style: square;
     list-style-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5Q0EzQUYiIHN0cm9rZS13aWR0aD0iNCI+PHBhdGggZD0iTTUgMTJoMTRNMTIgNWw3IDctNyA3Ii8+PC9zdmc+');
   }
   ul, ol {
-    margin-left: 1.25rem;
+    padding: 0.5rem 0;
     margin-bottom: 1.25rem;
-    padding-left: 1.45rem;
+    padding-left: 1.25rem;
+  }
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin-left: 1.25rem;
   }
   li {
     font-size: 1.2rem;
-    color: #6B7280;
+    color: $gray7;
   }
 }

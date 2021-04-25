@@ -1,3 +1,5 @@
+@import '../variables';
+
 .not-found__container {
     padding: 0 2rem;
     flex-grow: 1;
@@ -10,7 +12,7 @@
       text-transform: uppercase;
       padding: 1rem 3rem;
       &:hover {
-        background: #F3F4F6;
+        background: $gray2;
       }
     }
 }

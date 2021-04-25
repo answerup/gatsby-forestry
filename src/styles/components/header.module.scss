@@ -1,6 +1,8 @@
+@import '../variables';
+
 .header {
   padding: 1.5rem 1.25rem;
-  border-bottom: 1px solid #EBEBEB;
+  border-bottom: 1px solid $gray3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,8 +10,15 @@
     margin-bottom: 0;
   }
   h1 {
-    margin-bottom: 0; 
+    margin-bottom: 0;
+    a {
+      border: none;
+    }
   }
+}
+
+.active {
+  border-color: currentColor;
 }
 
 .header__nav {
