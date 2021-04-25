@@ -1,19 +1,23 @@
 import { graphql, useStaticQuery } from "gatsby"
 
-export default function useAbout() {
+export default function useHeader() {
   const data = useStaticQuery(graphql`
     query {
-      markdownRemark(frontmatter: { keytype: { eq: "about" } }) {
-        html
+      markdownRemark(frontmatter: { keytype: { eq: "header" } }) {
         frontmatter {
-          name
-          tagline
-          image {
+          logo {
             childImageSharp {
               fluid(maxWidth: 800) {
                 ...GatsbyImageSharpFluid
               }
             }
+          }
+          links {
+            twitter
+            facebook
+            instagram
+            youtube
+            github
           }
         }
       }

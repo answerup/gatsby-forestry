@@ -1,11 +1,10 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
-import usePosts from '../static_queries/usePosts'
+import usePosts from "../static_queries/usePosts"
 import blogTemplateStyles from "../styles/templates/blog.module.scss"
 import bodyStyles from "../styles/body.module.scss"
-import Img from 'gatsby-image'
-import About from "../components/About"
+import Img from "gatsby-image"
 
 export default function Blog({ data }) {
   const { html, frontmatter, fields } = data.markdownRemark
@@ -17,7 +16,7 @@ export default function Blog({ data }) {
       return blog.node.fields.slug
     })
     const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
-    if(nextSlug !== undefined && nextSlug !== '') {
+    if (nextSlug !== undefined && nextSlug !== "") {
       return nextSlug
     } else {
       return allSlugs[0]
@@ -42,14 +41,20 @@ export default function Blog({ data }) {
           dangerouslySetInnerHTML={{ __html: html }}
         />
         <div className={blogTemplateStyles.blog__footer}>
-          <Link title="Next post" to={`/blog/${nextSlug}`} className={blogTemplateStyles.footer__next}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
+          <Link title="“Next post”" to={`/${nextSlug}`}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </Link>
         </div>
       </article>
-      <About />
     </Layout>
   )
 }

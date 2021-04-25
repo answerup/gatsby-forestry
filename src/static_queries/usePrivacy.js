@@ -1,9 +1,9 @@
 import { graphql, useStaticQuery } from "gatsby"
 
-export default function useSiteMetadata() {
+export default function usePrivacy() {
   const data = useStaticQuery(graphql`
     query {
-      markdownRemark(frontmatter: {keytype: {eq: "privacy"}}) {
+      markdownRemark(frontmatter: { keytype: { eq: "privacy" } }) {
         html
       }
     }

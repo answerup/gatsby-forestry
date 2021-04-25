@@ -9,7 +9,9 @@ export default function Privacy() {
   return (
     <Layout>
       <section className={aboutStyles.about}>
-        <h1 className={aboutStyles.title}><span>Privacy</span></h1>
+        <h1 className={aboutStyles.title}>
+          <span>Privacy</span>
+        </h1>
         <div
           className={bodyStyles.body}
           dangerouslySetInnerHTML={{ __html: html }}

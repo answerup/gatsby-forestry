@@ -4,10 +4,10 @@ hide_body: false
 fields:
 - name: keytype
   type: text
+  label: Key Type
   config:
     required: true
-  label: keytype
-  default: author
+  default: about
   hidden: true
 - name: name
   type: text

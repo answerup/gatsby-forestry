@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 
-export default function useBlogData() {
+export default function usePosts() {
   const data = useStaticQuery(graphql`
     query getBlogData {
       allMarkdownRemark(
@@ -13,15 +13,7 @@ export default function useBlogData() {
             frontmatter {
               date(formatString: "MMMM Do, YYYY")
               title
-              hero_image {
-                childImageSharp {
-                  fluid( maxWidth: 800 ) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
             }
-            excerpt(pruneLength: 200)
             fields {
               slug
             }

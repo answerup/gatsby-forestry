@@ -1,0 +1,38 @@
+---
+label: Header
+hide_body: false
+fields:
+- name: keytype
+  type: text
+  label: Key Type
+  config:
+    required: true
+  default: header
+  hidden: true
+- name: logo
+  type: file
+  label: Logo
+  config:
+    maxSize: 5
+- name: links
+  type: field_group
+  label: Social Links
+  hidden: false
+  fields:
+  - type: text
+    name: twitter
+    label: Twitter
+  - type: text
+    name: facebook
+    label: Facebook
+  - type: text
+    name: instagram
+    label: Instagram
+  - type: text
+    name: youtube
+    label: Youtube
+  - type: text
+    name: github
+    label: Github
+pages:
+- content/data/header.md

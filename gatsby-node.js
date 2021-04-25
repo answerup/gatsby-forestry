@@ -23,9 +23,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   //get slugs
   const response = await graphql(`
     query {
-      allMarkdownRemark(
-        filter: { frontmatter: { keytype: { eq: null } } }
-      ) {
+      allMarkdownRemark(filter: { frontmatter: { keytype: { eq: null } } }) {
         edges {
           node {
             fields {
@@ -40,10 +38,33 @@ module.exports.createPages = async ({ graphql, actions }) => {
   response.data.allMarkdownRemark.edges.forEach(edge => {
     createPage({
       component: blogTemplate,
-      path: `/blog/${edge.node.fields.slug}`,
+      path: `/${edge.node.fields.slug}`,
       context: {
         slug: edge.node.fields.slug,
       },
     })
   })
+}
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  createTypes(`
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+      fields: Fields
+    }
+    type Frontmatter {
+      links: Links
+    }
+    type Links {
+      twitter: String
+      facebook: String
+      instagram: String
+      youtube: String
+      github: String
+    }
+    type Fields {
+      slug: String
+    }
+  `)
 }

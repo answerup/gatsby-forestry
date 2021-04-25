@@ -1,5 +1,5 @@
 import React from "react"
-import Img from 'gatsby-image'
+import Img from "gatsby-image"
 import Layout from "../components/Layout"
 import aboutStyles from "../styles/pages/about.module.scss"
 import bodyStyles from "../styles/body.module.scss"
@@ -10,13 +10,15 @@ export default function About() {
   return (
     <Layout>
       <section className={aboutStyles.about}>
-        <h1 className={aboutStyles.title}><span>About</span></h1>
+        <h1 className={aboutStyles.title}>
+          <span>About</span>
+        </h1>
         <div className={aboutStyles.info}>
           <div className={aboutStyles.wrapper}>
             <div className={aboutStyles.image}>
-              <Img 
+              <Img
                 fluid={frontmatter.image.childImageSharp.fluid}
-                style={{ position: 'absolute' }}
+                style={{ position: "absolute" }}
                 alt={frontmatter.name}
               />
             </div>
