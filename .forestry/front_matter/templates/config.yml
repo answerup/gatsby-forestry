@@ -13,4 +13,4 @@ fields:
   label: Site URL
   description: Necessary for generating “Sitemap”
 pages:
-  - config.json
+- config.json
