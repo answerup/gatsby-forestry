@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     title: config.title,
     description: config.description,
+    siteUrl: config.siteUrl,
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -61,5 +62,6 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }

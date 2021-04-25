@@ -1,4 +1,5 @@
 {
   "title": "Sample title",
-  "description": "This sample description"
+  "description": "This sample description",
+  "siteUrl": "https://www.example.com"
 }
