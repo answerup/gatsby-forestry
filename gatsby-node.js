@@ -55,6 +55,9 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
     type Frontmatter {
       links: Links
+      image: File @fileByRelativePath
+      heroImage: File @fileByRelativePath
+      logo: File @fileByRelativePath
     }
     type Links {
       twitter: String

@@ -22,8 +22,7 @@ fields:
 - name: image
   type: file
   config:
-    maxSize: 10
-    required: true
+    maxSize: 5
   label: Image
 pages:
 - content/data/about.md

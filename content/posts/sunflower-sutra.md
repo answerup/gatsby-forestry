@@ -1,7 +1,7 @@
 ---
 date: 2019-08-08T22:42:09.000+00:00
 title: Sunflower Sutra
-hero_image: "../images/adrien-olichon--aOsCcTJXWY-unsplash.jpg"
+heroImage: "../images/adrien-olichon--aOsCcTJXWY-unsplash.jpg"
 
 ---
 I walked on the banks of the tincan banana dock and sat down under the huge shade of a Southern Pacific locomotive to look for the sunset over the box house hills and cry.

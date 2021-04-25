@@ -17,11 +17,10 @@ fields:
     time_format: 
     display_utc: false
   default: now
-- name: hero_image
+- name: heroImage
   type: file
   config:
-    required: true
-    maxSize: '10'
+    maxSize: 5
   label: hero image
   description: Enter hero image for blog post here
   default: "../images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"

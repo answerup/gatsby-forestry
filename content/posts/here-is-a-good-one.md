@@ -1,6 +1,6 @@
 ---
 date: 2021-04-23T12:26:10.000+00:00
-hero_image: "../images/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"
+heroImage: "../images/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg"
 title: Here is a good one :)
 
 ---

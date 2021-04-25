@@ -1,7 +1,7 @@
 ---
 date: 2019-07-31T22:43:31Z
 title: An Essay on Walking
-hero_image: "../images/heather-shevlin-3B_NrzTjajc-unsplash.jpg"
+heroImage: "../images/heather-shevlin-3B_NrzTjajc-unsplash.jpg"
 
 ---
 Then it is that I appreciate the beauty and the glory of architecture, which itself never turns in, but forever stands out and erect, keeping watch over the slumberers.

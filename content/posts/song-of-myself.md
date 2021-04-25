@@ -1,7 +1,7 @@
 ---
 date: 2019-07-22T22:44:38Z
 title: Song of Myself
-hero_image: "../images/ren-ran-bBiuSdck8tU-unsplash.jpg"
+heroImage: "../images/ren-ran-bBiuSdck8tU-unsplash.jpg"
 
 ---
 I have heard what the talkers were talking, the talk of the  
