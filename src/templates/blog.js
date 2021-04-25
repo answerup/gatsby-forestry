@@ -26,12 +26,14 @@ export default function Blog({ data }) {
   return (
     <Layout>
       <article className={blogTemplateStyles.blog}>
-        <figure className={blogTemplateStyles.blog__hero}>
-          <Img
-            fluid={frontmatter.hero_image.childImageSharp.fluid}
-            alt={frontmatter.title}
-          />
-        </figure>
+        {frontmatter.hero_image && (
+          <figure className={blogTemplateStyles.blog__hero}>
+            <Img
+              fluid={frontmatter.hero_image.childImageSharp.fluid}
+              alt={frontmatter.title}
+            />
+          </figure>
+        )}
         <div className={blogTemplateStyles.blog__info}>
           <h1>{frontmatter.title}</h1>
           <h3>{frontmatter.date}</h3>

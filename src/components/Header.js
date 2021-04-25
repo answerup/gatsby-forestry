@@ -11,11 +11,15 @@ export default function Header({ title }) {
   return (
     <header className={headerStyles.header}>
       <Link to="/" className={headerStyles.logoLink}>
-        <Img
-          fluid={data.frontmatter.logo.childImageSharp.fluid}
-          style={{ position: "absolute" }}
-          alt={title}
-        />
+        {data.frontmatter.logo ? (
+          <Img
+            fluid={data.frontmatter.logo.childImageSharp.fluid}
+            style={{ position: "absolute" }}
+            alt={title}
+          />
+        ) : (
+          "[Logo placeholder]"
+        )}
       </Link>
       <button
         onClick={() => setShowMenu(true)}
