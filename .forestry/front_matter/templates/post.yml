@@ -5,12 +5,14 @@ fields:
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - name: date
   type: datetime
   label: date
   description: Date post was created
   config:
-    required: false
+    required: true
     date_format: 
     time_format: 
     display_utc: false
@@ -18,6 +20,7 @@ fields:
 - name: hero_image
   type: file
   config:
+    required: true
     maxSize: '10'
   label: hero image
   description: Enter hero image for blog post here

@@ -13,10 +13,13 @@ fields:
   type: file
   label: Logo
   config:
+    required: true
     maxSize: 5
 - name: links
   type: field_group
   label: Social Links
+  config:
+    required: true
   hidden: false
   fields:
   - type: text

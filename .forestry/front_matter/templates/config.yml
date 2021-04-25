@@ -5,12 +5,18 @@ fields:
 - type: text
   name: title
   label: Title
+  config:
+    required: true
 - type: text
   name: description
   label: Description
+  config:
+    required: true
 - type: text
   name: siteUrl
   label: Site URL
   description: Necessary for generating “Sitemap”
+  config:
+    required: true
 pages:
 - config.json
