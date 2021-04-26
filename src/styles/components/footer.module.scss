@@ -1,19 +1,26 @@
 @import "../variables";
 
 .footer {
+  background: $gray4;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid $gray3;
   margin-top: 4rem;
   padding: 3rem;
+  a {
+    color: $gray8;
+    border-color: $gray5;
+    &:hover {
+      border-color: $gray7;
+    }
+  }
 }
 
 .links {
   margin-bottom: 2rem;
   span {
     display: inline-block;
-    background: $gray4;
+    background: $gray6;
     padding: 3px;
     border-radius: 50%;
     margin: 0 1rem;

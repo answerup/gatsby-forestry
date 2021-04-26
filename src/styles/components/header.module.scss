@@ -1,8 +1,8 @@
-@import '../variables';
+@import "../variables";
 
 .header {
   padding: 0.5rem 1.25rem;
-  border-bottom: 1px solid $gray3;
+  background: $primary;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,21 +13,23 @@
   }
   button {
     background: none;
-    color: $gray6;
+    color: white;
     border: none;
     cursor: pointer;
     display: inline-flex;
     padding: 0.25rem;
-    border-radius: 0.125rem;
+    border-radius: 0.25rem;
     transition: 0.25s ease;
-    box-shadow: 0 0 0 2px $gray3;
+    background: #0001;
     &:hover {
-      background: $gray2;
+      background: #0002;
     }
     &:focus {
       outline: none;
-      box-shadow: 0 0 0 2px $gray4;
     }
+  }
+  .closeBtnContainer button {
+    color: $primary;
   }
 }
 .logoLink {
@@ -90,5 +92,14 @@
   }
   .header__nav a {
     margin-left: 2rem;
+  }
+  .menu {
+    a {
+      border-color: #fff8;
+      color: white;
+      &:hover {
+        border-color: #fff;
+      }
+    }
   }
 }
