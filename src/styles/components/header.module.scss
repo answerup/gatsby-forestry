@@ -95,10 +95,13 @@
   }
   .menu {
     a {
-      border-color: #fff8;
+      border-color: #fff4;
       color: white;
       &:hover {
         border-color: #fff;
+      }
+      &.active {
+        border-color: currentColor;
       }
     }
   }
