@@ -49,15 +49,26 @@ module.exports.createPages = async ({ graphql, actions }) => {
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   createTypes(`
+    type SiteSiteMetadata {
+      title: String
+      description: String
+    }
     type MarkdownRemark implements Node {
+      id: String
+      html: String
       frontmatter: Frontmatter
       fields: Fields
     }
     type Frontmatter {
-      links: Links
+      logo: File @fileByRelativePath
       image: File @fileByRelativePath
       heroImage: File @fileByRelativePath
-      logo: File @fileByRelativePath
+      links: Links
+      keytype: String
+      title: String
+      date: Date @dateformat
+      name: String
+      tagline: String
     }
     type Links {
       twitter: String

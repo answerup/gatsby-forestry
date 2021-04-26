@@ -7,11 +7,10 @@ export default function BlogList() {
   const blogData = usePosts()
   return (
     <section>
-      <div className={blogListStyles.wrapper}>
-        <ul className={blogListStyles.list}>
-          {blogData
-            .filter(blog => blog.node.frontmatter.title !== "")
-            .map(blog => (
+      {blogData.length ? (
+        <div className={blogListStyles.wrapper}>
+          <ul className={blogListStyles.list}>
+            {blogData.map(blog => (
               <li key={blog.node.id}>
                 <h2>
                   <Link to={`/${blog.node.fields.slug}`}>
@@ -21,8 +20,13 @@ export default function BlogList() {
                 <h3>{blog.node.frontmatter.date}</h3>
               </li>
             ))}
-        </ul>
-      </div>
+          </ul>
+        </div>
+      ) : (
+        <div className={blogListStyles.noPost}>
+          <h3>[No post]</h3>
+        </div>
+      )}
     </section>
   )
 }
