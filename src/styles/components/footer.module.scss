@@ -13,8 +13,9 @@
   margin-bottom: 2rem;
   span {
     display: inline-block;
-    color: $gray5;
-    transform: scale(2);
+    background: $gray4;
+    padding: 3px;
+    border-radius: 50%;
     margin: 0 1rem;
   }
 }

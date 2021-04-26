@@ -8,7 +8,7 @@ export default function Footer() {
     <div className={footerStyles.footer}>
       <div className={footerStyles.links}>
         <Link to="/about">About</Link>
-        <span>•</span>
+        <span />
         <Link to="/privacy">Privacy</Link>
       </div>
       <SocialLinks />
