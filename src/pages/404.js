@@ -7,7 +7,7 @@ import notFoundStyles from "../styles/pages/404.module.scss"
 
 export default function NotFound() {
   return (
-    <Layout>
+    <Layout title="Not found">
       <div className={notFoundStyles.notFound__container}>
         <h1>404 | Not found</h1>
         <Link title="“Back to home”" to="/">

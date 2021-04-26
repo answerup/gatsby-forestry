@@ -26,7 +26,7 @@ export default function Blog({ data }) {
   }
 
   return (
-    <Layout>
+    <Layout title={frontmatter.title}>
       <article className={blogTemplateStyles.blog}>
         {frontmatter.heroImage && (
           <figure className={blogTemplateStyles.blog__hero}>

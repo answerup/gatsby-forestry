@@ -10,7 +10,7 @@ import bodyStyles from "../styles/body.module.scss"
 export default function About() {
   const { html, frontmatter } = useAbout()
   return (
-    <Layout>
+    <Layout title="About">
       <section className={aboutStyles.about}>
         <h1 className={aboutStyles.title}>
           <span>About</span>

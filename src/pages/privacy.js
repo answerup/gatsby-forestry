@@ -9,7 +9,7 @@ import bodyStyles from "../styles/body.module.scss"
 export default function Privacy() {
   const { html } = usePrivacy()
   return (
-    <Layout>
+    <Layout title="Privacy">
       <section className={aboutStyles.about}>
         <h1 className={aboutStyles.title}>
           <span>Privacy</span>

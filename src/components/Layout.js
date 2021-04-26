@@ -7,14 +7,21 @@ import useSiteMetadata from "../static_queries/useSiteMetadata"
 
 import layoutStyles from "../styles/components/layout.module.scss"
 
-export default function Layout({ children }) {
+export default function Layout({
+  title: pageTitle,
+  description: pageDescription,
+  children,
+}) {
   const { title, description } = useSiteMetadata()
   return (
     <section className={layoutStyles.layout}>
       <Helmet>
         <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <title>
+          {pageTitle ? `${pageTitle} | ` : ""}
+          {title}
+        </title>
+        <meta name="description" content={pageDescription && description} />
       </Helmet>
       <Header title={title} />
       <div className={layoutStyles.content}>{children}</div>
