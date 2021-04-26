@@ -1,8 +1,10 @@
 import React from "react"
+
 import Layout from "../components/Layout"
+import usePrivacy from "../static_queries/usePrivacy"
+
 import aboutStyles from "../styles/pages/about.module.scss"
 import bodyStyles from "../styles/body.module.scss"
-import usePrivacy from "../static_queries/usePrivacy"
 
 export default function Privacy() {
   const { html } = usePrivacy()

@@ -1,10 +1,12 @@
 import React from "react"
-import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
+
+import Layout from "../components/Layout"
 import usePosts from "../static_queries/usePosts"
+
 import blogTemplateStyles from "../styles/templates/blog.module.scss"
 import bodyStyles from "../styles/body.module.scss"
-import Img from "gatsby-image"
 
 export default function Blog({ data }) {
   const { html, frontmatter, fields } = data.markdownRemark

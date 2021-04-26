@@ -1,9 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import useHeader from "../static_queries/useHeader"
-import headerStyles from "../styles/components/header.module.scss"
+
 import SocialLinks from "./SocialLinks"
+import useHeader from "../static_queries/useHeader"
+
+import headerStyles from "../styles/components/header.module.scss"
 
 export default function Header({ title }) {
   const [showMenu, setShowMenu] = React.useState(false)

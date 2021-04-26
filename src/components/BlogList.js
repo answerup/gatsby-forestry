@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
+
 import usePosts from "../static_queries/usePosts"
+
 import blogListStyles from "../styles/components/bloglist.module.scss"
 
 export default function BlogList() {

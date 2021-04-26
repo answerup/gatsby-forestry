@@ -1,7 +1,9 @@
-import { Link } from "gatsby"
 import React from "react"
-import footerStyles from "../styles/components/footer.module.scss"
+import { Link } from "gatsby"
+
 import SocialLinks from "./SocialLinks"
+
+import footerStyles from "../styles/components/footer.module.scss"
 
 export default function Footer() {
   return (

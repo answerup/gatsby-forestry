@@ -1,6 +1,8 @@
 import React from "react"
-import headerStyles from "../styles/components/header.module.scss"
+
 import useHeader from "../static_queries/useHeader"
+
+import headerStyles from "../styles/components/header.module.scss"
 
 export default function SocialLinks() {
   const {

@@ -1,9 +1,11 @@
 import React from "react"
 import Img from "gatsby-image"
+
 import Layout from "../components/Layout"
+import useAbout from "../static_queries/useAbout"
+
 import aboutStyles from "../styles/pages/about.module.scss"
 import bodyStyles from "../styles/body.module.scss"
-import useAbout from "../static_queries/useAbout"
 
 export default function About() {
   const { html, frontmatter } = useAbout()
